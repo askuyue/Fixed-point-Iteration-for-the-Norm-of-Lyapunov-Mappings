@@ -75,7 +75,8 @@ dXmatrixK        =   zeros(IterMax,1);
 % % 对称化
 %     X0              =   (X0 + X0') ./ 2;
     
-    X0  =   hilb(N);
+    X0  =   （A+A'） ./ 2;
+    % X0  =   （A-A'） ./ 2;
     X0  =   X0 ./ norm(X0,'fro');
     
     Xk              =   X0;
